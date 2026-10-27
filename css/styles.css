@@ -1,0 +1,187 @@
+/* play-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/play-v21-cyrillic_latin-regular.woff2') format('woff2'),
+        url('../fonts/play-v21-cyrillic_latin-regular.ttf') format('truetype');
+}
+
+/* play-700 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/play-v21-cyrillic_latin-700.woff2') format('woff2'),
+        url('../fonts/play-v21-cyrillic_latin-700.ttf') format('truetype');
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v51-cyrillic_latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v51-cyrillic_latin-regular.ttf') format('truetype');
+}
+
+/* roboto-600 - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-v51-cyrillic_latin-600.woff2') format('woff2'),
+        url('../fonts/roboto-v51-cyrillic_latin-600.ttf') format('truetype');
+}
+:root {
+    --color-brand: #2B7FFF;
+    --color-primary-dark: #011C44;
+    --color-primary-light: #FFFFFF;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Roboto, sans-serif;
+    background-color: cadetblue;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+}
+body {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    margin: 0;
+
+}
+address {
+    font-size:13px;
+    font-weight: 400;
+    font-style: normal;
+    color: #747272;
+}
+ul {
+    list-style-type: none;
+}
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+/* Button */
+.button {
+    padding: 16px 32px;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-brand);
+    background-color: var(--color-brand);
+    font-family: Roboto, sans-serif;
+    font-size:18px;
+    font-weight: 600;
+    border-radius: 32px;
+    cursor:pointer;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+}
+
+/* Link */
+.link{
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--color-brand);
+    font-weight: 900;
+}
+
+footer .link {
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* sections */
+.hero-section {
+    padding: 16px 0px 126px 106px;
+}
+.hero-title {
+    margin-bottom: 40px;
+    color: var(--color-brand);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 0.81;
+}
+
+/* приєднуйтемь до нас */
+.about-section {
+    padding-top: 176px;
+}
+.about-title {
+    margin-bottom: 40px;
+}
+
+.default-title {
+    margin-bottom: 48px;
+}
+
+.section-title {
+    color: var(--color-primary-dark);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.0;
+}
+
+.section-title .accent {
+    color: var(--color-brand);
+}
+
+.procedure-title {
+    color: var(--color-primary-light);
+    font-size: 22px;
+    line-height: 1.18;
+}
+
+/* fonts styles */
+.semi-bold-acent {
+    font-weight: 600;
+}
+
+.camel-case {
+    text-transform:capitalize;
+}
+
+.about-section-font {
+    font-size: 22px;
+    line-height: 1.72;
+}
+.font12 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.regiter-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+.regiter-title .accent {
+    color: var(--color-brand);
+}
