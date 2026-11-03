@@ -1,0 +1,33 @@
+/* почему мы */
+.why-us-section {
+    padding-top: 176px;
+}
+
+.why-us-title {
+    max-width: 432px;
+    margin: 0 auto 48px;
+}
+
+.why-us-text {
+    margin: 0;
+}
+
+
+.why-us-flex {
+    display: flex;
+    gap: 56px;
+    padding: 0 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-us-flex-item {
+    text-align: center;
+    background-color: var(--color-primary-light);
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 24px 32px;
+
+    align-items: center;
+
+}

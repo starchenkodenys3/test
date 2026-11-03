@@ -1,0 +1,24 @@
+@use '../utils/mixins';
+.icon-star {
+    position: absolute;
+    z-index: 2;
+}
+
+
+.star-top-right {
+    top: 5%;
+    right: -20px;
+    @include mixins.star(40px, var(--color-brand), 45deg);
+}
+
+.star-center-left {
+    top: 50%;
+    left: 25%;
+    @include mixins.star(64px, var(--color-primary-dark), 0);
+}
+
+.star-small-right {
+    top: 38%;
+    right: 5%;
+    @include mixins.star(16px, --color-secondary-grey, 0);
+}

@@ -1,0 +1,6 @@
+@mixin star($size, $color, $deg) {
+    width: $size;
+    height: $size;
+    fill: $color;
+    transform: rotate($deg);
+}

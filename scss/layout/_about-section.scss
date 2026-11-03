@@ -1,0 +1,49 @@
+.section.about {
+    padding: 0px;
+}
+
+.about-container {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.about-content {
+    max-width: 710px;
+    font-size: 22px;
+    line-height: 1.72;
+}
+
+.about-img-wrapper {
+    display: flex;
+    position: relative;
+}
+
+.about-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-basis: 500px;
+    flex-shrink: 0;
+}
+
+/* Верхняя картинка — прижимаем влево */
+.about-img img:first-child {
+    align-self: flex-start;
+}
+
+/* Нижня картинка — прижимаем вправо */
+.about-img img:last-child {
+    align-self: flex-end;
+}
+
+.about-title {
+    margin: 40px 0;
+}
+
+.img-face {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    object-fit: cover;
+}

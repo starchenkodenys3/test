@@ -1,0 +1,24 @@
+@use './utils/fonts';
+@use './utils/variables';
+@use './base';
+@use './utils/utils';
+@use './utils/textstyles';
+
+@use './components/buttons';
+@use './components/links';
+@use './components/stars';
+@use './components/icons';
+@use './components/carousel';
+@use './components/forms';
+@use './components/register-title';
+
+@use './layout/header';
+@use './layout/section';
+@use './layout/container';
+@use './layout/hero-section';
+@use './layout/about-section';
+@use './layout/why-us-section';
+@use './layout/procedures-section';
+@use './layout/contacts-section';
+@use './layout/footer';
+@use './layout/modal-window';
