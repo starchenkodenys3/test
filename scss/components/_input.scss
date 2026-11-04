@@ -1,0 +1,32 @@
+.input {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--color-primary-light);
+    
+    &__label {
+        display: block;
+    }
+
+    &__control {
+        padding: 18px 32px;
+        width: 100%;
+        border-radius: 32px;
+        border: 2px solid var(--color-secondary-grey);
+        background-color: transparent;
+        font-family: Roboto, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--color-primary-light);
+    }
+    &__control::placeholder {
+        color: var(--color-primary-light);
+        opacity: 1;
+    }
+
+    &__control:focus {
+        background-color: var(--color-secondary-grey);
+        outline: none;
+    }
+}
+

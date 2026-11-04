@@ -1,13 +1,32 @@
-.font12 {
+.text-font12 {
     font-size: 12px;
     line-height: 1.5;
-    /* width: 240px; */
 }
 
 .camel-case {
     text-transform: capitalize;
 }
 
-.semi-bold-acent {
+.text-semi-bold {
     font-weight: 600;
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+.text-brand {
+    color: var(--color-brand);
+}
+
+.text-gray {
+    color: var(--color-secondary-grey);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-zero-margin {
+    margin: 0;
 }

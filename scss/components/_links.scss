@@ -2,11 +2,12 @@
     color: var(--color-primary-dark);
     text-decoration: none;
     transition: color 0.3s;
-}
 
-.link:hover {
-    color: var(--color-brand);
-    font-weight: 900;
+    &:hover {
+        color: var(--color-brand);
+        font-weight: 900;
+    }
+
 }
 
 footer .link {
@@ -17,3 +18,7 @@ footer .link {
     line-height: 2.5;
     transition: color .3s;
 }
+
+.link-gray {
+    color: var(--color-secondary-grey);
+} 

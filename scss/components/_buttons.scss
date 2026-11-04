@@ -10,19 +10,10 @@
     border-radius: 32px;
     margin-bottom: 14px;
     cursor: pointer;
+    
+    &:hover {
+        background-color: transparent;
+        color: var(--color-primary-dark);
+    }
 }
 
-.modal-btn-open:hover {
-    background-color: transparent;
-    color: var(--color-primary-dark);
-}
-
-.button-mdl {
-    width: auto;
-    display: block;
-    margin: 0 auto 8px;
-}
-
-.button-mdl:hover {
-    color: var(--color-brand);
-}

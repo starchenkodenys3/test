@@ -1,23 +1,16 @@
 .section {
     padding: 48px 0;
+
+    &__title {
+        color: var(--color-primary-dark);
+        font-family: Play, sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.0;
+        
+        &--bottom48 {
+            margin-bottom: 48px;
+        }
+    }
 }
 
-.default-title {
-    margin-bottom: 48px;
-}
-
-.section-title {
-    color: var(--color-primary-dark);
-    font-family: Play, sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.0;
-}
-
-.section-title.centred {
-    text-align: center;
-}
-
-.section-title .accent {
-    color: var(--color-brand);
-}

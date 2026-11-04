@@ -11,12 +11,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
     transition: opacity .3s, visibility .3s;
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 .modal {
@@ -30,19 +30,33 @@
     color: var(--color-primary-light);
     background-color: var(--color-primary-dark);
     overflow-y: auto;
-}
+    
+    &__title {
+        font-family: Play, sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: normal;
+        text-align: center;
+        color: var(--color-primary-light);
+    }
+        
+    &__form-field {
+        margin-bottom: 24px;
+    }
 
-.modal-btn-close {
-    position: absolute;
-    top: 42px;
-    right: 42px;
-}
-
-.modal-title {
-    font-family: Play, sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: normal;
-    text-align: center;
-    color: var(--color-primary-light);
+    &__btn-close {
+        position: absolute;
+        top: 42px;
+        right: 42px;
+    }
+    
+    &__button {
+        width: auto;
+        display: block;
+        margin: 0 auto 8px;
+    }
+    
+    &__button:hover {
+        color: var(--color-brand);
+    }
 }

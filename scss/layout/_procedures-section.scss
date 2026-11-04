@@ -1,54 +1,16 @@
-/* procedures section */
-.format-prc-list {
-    display: flex;
-    gap: 16px;
-}
+.procedures-section {
+    &__container {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
 
-.format-prc-card {
-    position: relative;
-    height: 456px;
-    padding: 372px 77px 32px 115px;
-    transition: transform 0.3s;
-    border-radius: 0px 100px 0px 100px;
-    overflow: hidden;
-}
+    &__list {
+        display: flex;
+        gap: 16px;
+    }
 
-.format-prc-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(180deg,
-            rgba(1, 28, 68, 0) 47%,
-            rgba(1, 28, 68, 0.73) 83%,
-            var(--color-primary-dark) 99%);
-    z-index: 1;
-    /* Ставим выше картинки, но ниже текста */
-    pointer-events: none;
-    /* Чтобы градиент не мешал кликам */
-}
-
-.format-prc-card:hover {
-    transform: scale(1.07);
-}
-
-.format-prc-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
-
-.procedure-title {
-    position: relative;
-    z-index: 2;
-    /* Поднимаем текст выше градиента (::after), чтобы он был четким */
-    color: var(--color-primary-light);
-    font-size: 22px;
-    line-height: 1.18;
+    &__item {
+        flex-basis: calc((100% - 40px) / 3);
+    }
 }

@@ -1,49 +1,48 @@
-.section.about {
+.about-section {
     padding: 0px;
-}
 
-.about-container {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-}
+    &__container {
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
+    }
 
-.about-content {
-    max-width: 710px;
-    font-size: 22px;
-    line-height: 1.72;
-}
+    &__content {
+        max-width: 710px;
+        font-size: 22px;
+        line-height: 1.72;
+    }
 
-.about-img-wrapper {
-    display: flex;
-    position: relative;
-}
+    &__title {
+        margin: 40px 0;
+    }
 
-.about-img {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    flex-basis: 500px;
-    flex-shrink: 0;
-}
+    &__img-wrapper {
+        display: flex;
+        position: relative;
+    }
 
-/* Верхняя картинка — прижимаем влево */
-.about-img img:first-child {
-    align-self: flex-start;
-}
+    &__img {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-basis: 500px;
+        flex-shrink: 0;
+    }
+    /* Верхняя картинка — прижимаем влево */
+    &__img img:first-child {
+        align-self: flex-start;
+    }
+    
+    /* Нижня картинка — прижимаем вправо */
+    &__img img:last-child {
+        align-self: flex-end;
+    }
 
-/* Нижня картинка — прижимаем вправо */
-.about-img img:last-child {
-    align-self: flex-end;
-}
-
-.about-title {
-    margin: 40px 0;
-}
-
-.img-face {
-    width: 330px;
-    height: 330px;
-    border-radius: 50%;
-    object-fit: cover;
+    &__img-face {
+        width: 330px;
+        height: 330px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
