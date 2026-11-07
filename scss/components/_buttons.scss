@@ -1,16 +1,23 @@
+@use '../utils/variables' as *;
 .modal-btn-open {
     width: 240px;
-    padding: 16px 32px;
+    padding: 12px 24px;
     color: var(--color-primary-light);
     border: 2px solid var(--color-brand);
     background-color: var(--color-brand);
     font-family: Roboto, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 32px;
     margin-bottom: 14px;
     cursor: pointer;
     
+    @media screen and (min-width: $bp-desktop) {
+        padding: 16px 32px;
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+
     &:hover {
         background-color: transparent;
         color: var(--color-primary-dark);

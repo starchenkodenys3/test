@@ -9,12 +9,14 @@
 @use './components/stars';
 @use './components/carousel-button';
 @use './components/procedure-card';
+@use './components/pagination';
 @use './components/input';
 @use './components/register-title';
 
 @use './layout/header';
 @use './layout/section';
 @use './layout/container';
+@use './layout/mobile-menu';
 @use './layout/hero-section';
 @use './layout/about-section';
 @use './layout/why-us-section';

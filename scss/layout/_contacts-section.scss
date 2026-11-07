@@ -1,17 +1,50 @@
+@use '../utils/variables' as *;
 .contacts-section {
     /* padding:0 82px 0 75px;  */
-    padding-bottom: 96px;
+        padding-bottom: 0;
+    
+        @media screen and (min-width: $bp-tablet) {
+                    padding-bottom: 16px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-bottom: 96px;
+        }
 
     &__container {
         display: flex;
-        gap: 32px;
+        gap: 24px;
         justify-content: center;
+        flex-direction: column-reverse;
+        justify-self: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+        }
+        
+        @media screen and (min-width: $bp-desktop) {
+            gap: 32px;
+        }
     }
 
     &__map {
         flex-shrink: 0;
+       //width: 100%;
+        height: 232px;
         border: none;
-        border-radius: 32px;
+        margin: 0 -24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            border-radius: 32px;
+            margin: auto;
+            width: 320px;
+            height: 450px;
+        }
+        
+        @media screen and (min-width: $bp-desktop) {
+            width: 605px;
+            height: 480px;
+        }
     }
 
     &__form-field {
@@ -29,10 +62,15 @@
     }
 
     &__form {
-        width: 422px;
+        width: 320px;
         color: var(--color-primary-light);
         background-color: var(--color-primary-dark);
         border-radius: 32px;
-        padding: 48px 56px;
+        padding: 42px 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+                width: 420px;
+                padding: 48px 56px;
+            }
     }
 }

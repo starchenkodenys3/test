@@ -1,8 +1,13 @@
+@use '../utils/variables' as *;
 .footer {
     background-color: var(--color-primary-dark);
-    padding: 56px 0;
+    padding: 32px 0;
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 56px 0;
+    }
 
     &::after {
         position: absolute;
@@ -13,20 +18,52 @@
         background-repeat: no-repeat;
         background-image: url('../images/decor-drugs.png');
         content: '';
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
     }
 
     &__container {
         display: flex;
-        gap: 20px;
-    
+        flex-direction: column;
+        
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 20px;
+        }
     }
+
+
     &__nav,
     &__address {
-    display: flex;
-    ;
-    flex-basis: 50%;
-    gap: 20px;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            flex-basis: 50%;
+        }
+
+        &--mobile-hidden{
+            display: none;
+            @media screen and (min-width: $bp-tablet) {
+                display: block;
+            }
+        }
+    }
+
+    &__address {
+        flex-direction: column-reverse;
+        gap: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
 
     &__logo,
     &__menu {
@@ -39,10 +76,16 @@
     }
 
     &__icon {
-        width: 42px;
-        height: 42px;
+        width: 32px;
+        height: 32px;
+        margin-top: 0;
         fill: var(--color-primary-light);
-        margin-top: 16px;
+        
+        @media screen and (min-width: $bp-desktop) {
+            width: 42px;
+            height: 42px;
+            margin-top: 16px;
+        }
     }
 }
  

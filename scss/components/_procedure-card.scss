@@ -1,6 +1,8 @@
 .procedure-card {
     position: relative;
-    height: 456px;
+    max-width: 344px;
+    max-height: 456px;
+    justify-self: center;
     padding: 372px 77px 32px 115px;
     transition: transform 0.3s;
     border-radius: 0px 100px 0px 100px;
@@ -21,9 +23,6 @@
         pointer-events: none;
     }
     
-    &:hover {
-        transform: scale(1.07);
-    }
 
     &__image {
         position: absolute;
